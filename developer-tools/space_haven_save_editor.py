@@ -63,7 +63,11 @@ root = tree.getroot()
 
 for ship in root.findall(".//ships/ship"):
     settings = ship.find("settings")
-    owner = settings.get("owner") if settings is not None else None
+    if settings is None:
+        print("Skip:", ship.get("sname"), "owner", None)
+        continue
+
+    owner = settings.get("owner")
     if owner == "Player":
         print("Ship:", ship.get("sname"))
         for character in ship.findall(".//characters/c"):
@@ -75,7 +79,9 @@ xml_buffer = io.BytesIO()
 tree.write(xml_buffer, encoding="utf-8", xml_declaration=True)
 xml_content = xml_buffer.getvalue().decode("utf-8").replace(" />", "/>")
 
-xml_content = xml_content[xml_content.find(">") + 1 :].strip()
+if xml_content.startswith("<?xml"):
+    xml_content = xml_content.split("\n", 1)[1] if "\n" in xml_content else ""
+xml_content = xml_content.strip()
 
 with open(SAVE_FILE_NAME, "w", encoding="utf-8") as file:
     file.write(xml_content)
