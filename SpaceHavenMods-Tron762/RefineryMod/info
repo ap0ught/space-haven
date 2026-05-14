@@ -1,0 +1,8 @@
+<mod>
+  <name>Refinery Ship Parts</name>
+  <description>The idea of this mod is to add items which will not easily fit into a combat ship. This is to encourage the creation of a second "refinery" support ship which would hyper space into sectors only after they are cleared by a combat- focused ship. Ideally these items would have a rule to dictate that they cannot function with a shield generator/scanner on board.</description>
+  <minimumLoaderVersion>0.0.2</minimumLoaderVersion>
+  <gameVersions>
+    <v>0.4.1</v>
+  </gameVersions>
+</mod>

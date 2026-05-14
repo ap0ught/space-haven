@@ -1,0 +1,37 @@
+<t>
+	<resource_refined_base_metal_name id="9762184" pid="192">
+		<EN>Refined Base Metals</EN>
+	</resource_refined_base_metal_name>
+	
+	<resource_refined_noble_metal id="9762190" pid="192">
+		<EN>Refined Noble Metals</EN>
+	</resource_refined_noble_metal>
+	
+	<resource_indwaste_name id="97620513" pid="192">
+		<EN>Industrial Waste</EN>
+	</resource_indwaste_name>	
+		
+	<object_lg_base_metal_refinery_name id="9762478" pid="121">
+	<EN>Industrial Base Metal Refinery</EN>
+	</object_lg_base_metal_refinery_name>	
+
+	<object_lg_noble_metal_refinery_name id="97620505" pid="121">
+	<EN>Industrial Noble Metal Refinery</EN>
+	</object_lg_noble_metal_refinery_name>		
+	
+	<object_indwaste_recycler_name id="97620517" pid="121">
+	<EN>Industrial Waste Recycler</EN>
+	</object_indwaste_recycler_name>		
+
+	<resource_fuelwaste_name id="97620521" pid="192">
+		<EN>Fuel Waste</EN>
+	</resource_fuelwaste_name>	
+	
+	<resource_chemwaste_name id="97620523" pid="192">
+		<EN>Chemical Waste</EN>
+	</resource_chemwaste_name>		
+	
+	
+	
+	
+</t>

@@ -1,0 +1,8 @@
+<mod>
+  <name>MoistureVaporator</name>
+  <description>Harvests waste water vapor from a ship's Oxygen supply to recycle water used in oxygen generation.</description>
+  <minimumLoaderVersion>0.0.2</minimumLoaderVersion>
+  <gameVersions>
+    <v>0.4.1</v>
+  </gameVersions>
+</mod>
