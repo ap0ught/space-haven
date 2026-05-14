@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import io
+import sys
 import xml.etree.ElementTree as ET
 
 SAVE_FILE_NAME = "game"
@@ -49,16 +50,26 @@ def process_character(char):
                     job.set("priority", DEFAULT_PRIORITY)
 
 
-tree = ET.parse(SAVE_FILE_NAME)
+try:
+    tree = ET.parse(SAVE_FILE_NAME)
+except FileNotFoundError:
+    print(f"Save file not found: {SAVE_FILE_NAME}")
+    sys.exit(1)
+except ET.ParseError as exc:
+    print(f"Invalid XML in save file {SAVE_FILE_NAME}: {exc}")
+    sys.exit(1)
+
 root = tree.getroot()
 
 for ship in root.findall(".//ships/ship"):
-    if ship.find("settings").get("owner") == "Player":
+    settings = ship.find("settings")
+    owner = settings.get("owner") if settings is not None else None
+    if owner == "Player":
         print("Ship:", ship.get("sname"))
         for character in ship.findall(".//characters/c"):
             process_character(character)
     else:
-        print("Skip:", ship.get("sname"), "owner", ship.find("settings").get("owner"))
+        print("Skip:", ship.get("sname"), "owner", owner)
 
 xml_buffer = io.BytesIO()
 tree.write(xml_buffer, encoding="utf-8", xml_declaration=True)
