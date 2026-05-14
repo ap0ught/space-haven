@@ -11,8 +11,8 @@
 		<EN>Oxygenating Vegetables</EN>
 	</object_oxycrop_name>	
 
-	<object_allinone_desc id="97620253" pid="121">
+	<object_oxycrop_desc id="97620253" pid="121">
     <EN>A slow growing crop of vegetables which oxygenate the room they are planted in. Half as effective as an Oxygen generator.</EN>
-	</object_allinone_desc>	
+	</object_oxycrop_desc>	
 	
 </t>

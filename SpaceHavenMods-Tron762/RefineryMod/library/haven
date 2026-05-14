@@ -99,7 +99,7 @@
 
 		<product _name="Chemical waste to Chemicals" eid="97622011" interactive="true" itemScrapper="false" processValue="100" scrapper="false" smelter="false" startOnly="false" type="Process">
 			<needs>
-				<l _name="Chemicals Waste" consumeEvery="1" element="97620522" howMuch="1" />
+				<l _name="Chemical Waste" consumeEvery="1" element="97620522" howMuch="1" />
 			</needs>
 			<products>
 				<l _name="Chemical " element="176" howMuch="1" produceEvery="2" />
