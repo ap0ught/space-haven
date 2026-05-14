@@ -1,3 +1,3 @@
 Install the files to the "steamapps\common\SpaceHaven\mods" directory.
 
-Launch Space Haven via the unoffical mod launcher. For further detail on this launcher join the Space Haven Discord!
+Launch Space Haven via the unofficial mod launcher. For further detail on this launcher join the Space Haven Discord!
