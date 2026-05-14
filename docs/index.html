@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Space Haven Mods</title>
+    <meta
+      name="description"
+      content="A GitHub Pages showcase for the Space Haven mods in this repository."
+    >
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="hero">
+      <div class="wrap">
+        <p class="eyebrow">GitHub Pages showcase</p>
+        <h1>Space Haven Mods</h1>
+        <p class="lede">
+          A small collection of Space Haven mods by Killparadise, plus a developer template
+          for building Java-based mods, with links back to source files and published releases.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://github.com/ap0ught/space-haven-mods">View repository</a>
+          <a class="button" href="https://github.com/ap0ught/space-haven-mods/blob/main/README.md">Read provenance notes</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="panel">
+        <h2>Where these came from</h2>
+        <p>
+          Four mods in this repository were published on Nexus Mods. Two more are preserved
+          here as repository-only work: <strong>Hyperdrive Mass Config</strong>, which was never
+          released, and <strong>Zero System Points</strong>, which is marked deprecated in its
+          own metadata.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>Developer resources</h2>
+        <p>
+          The repository now also carries the upstream <strong>SpaceHavenModTemplate</strong>
+          from the Spacehaven modding tools developers under its original MIT license. It
+          provides a Maven + AspectJ starter project for runtime patch mods.
+        </p>
+        <div class="links">
+          <a href="https://github.com/ap0ught/space-haven-mods/tree/main/developer-tools/SpaceHavenModTemplate">Imported template</a>
+          <a href="https://github.com/Spacehaven-modding-tools/SpaceHavenModTemplate">Upstream repository</a>
+          <a href="https://github.com/ap0ught/space-haven-mods/blob/main/developer-tools/space_haven_save_editor.py">Save editor script</a>
+        </div>
+        <p>
+          This repository also merges in the <strong>Tron762-SpaceHavenMods</strong> branch
+          under <code>SpaceHavenMods-Tron762/</code>, with attribution back to
+          <a href="https://github.com/Tron762/SpaceHavenMods">Tron762/SpaceHavenMods</a>.
+        </p>
+        <p>
+          The save editor script is attributed to
+          <a href="https://gist.github.com/vivalenta/f079f515a2c4aab9278f14a0b7eed68f#file-space_haven_save_editor-py">vivalenta's gist</a>.
+        </p>
+      </section>
+
+      <section class="mod-grid" aria-label="Mods">
+        <article class="card">
+          <div class="card-head">
+            <h2>Improved Airlock</h2>
+            <span class="badge">Published</span>
+          </div>
+          <p>Boosts airlock oxygen capacity, suit locker oxygen, and docking inventory limits.</p>
+          <ul>
+            <li>Airlock oxygen: 6,000 → 10,000</li>
+            <li>Outgoing / incoming inventory: 10 → 20</li>
+            <li>Suit locker oxygen: 6,000 → 7,000</li>
+            <li>Airlock doorway oxygen: 1,000 → 3,500</li>
+          </ul>
+          <p class="meta">Configurable through five loader variables in <code>info.xml</code>.</p>
+          <div class="links">
+            <a href="https://github.com/ap0ught/space-haven-mods/tree/main/Improved%20Airlock">Source</a>
+            <a href="https://www.nexusmods.com/spacehaven/mods/24">Nexus Mods</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h2>Improved Shuttles</h2>
+            <span class="badge">Published</span>
+          </div>
+          <p>Upgrades shuttle and miner capacity so small craft stay useful longer.</p>
+          <ul>
+            <li>Shuttle crew: 4 → 5</li>
+            <li>Shuttle oxygen: 10,000 → 16,500</li>
+            <li>Shuttle carry capacity: 10 → 20</li>
+            <li>Miner oxygen: 4,000 → 7,000</li>
+            <li>Miner ore capacity: 5 → 10</li>
+          </ul>
+          <p class="meta">Configurable through five loader variables in <code>info.xml</code>.</p>
+          <div class="links">
+            <a href="https://github.com/ap0ught/space-haven-mods/tree/main/Improved%20Shuttles">Source</a>
+            <a href="https://www.nexusmods.com/spacehaven/mods/23">Nexus Mods</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h2>Pack Wagon</h2>
+            <span class="badge">Published</span>
+          </div>
+          <p>Turns storage-heavy ships into cargo haulers by increasing storage capacities.</p>
+          <ul>
+            <li>Large storage: 250 → 550</li>
+            <li>Small storage: 50 → 150</li>
+            <li>Body storage: 20 → 50</li>
+            <li>Robot storage: 20 → 50</li>
+          </ul>
+          <p class="meta">Configurable through four loader variables in <code>info.xml</code>.</p>
+          <div class="links">
+            <a href="https://github.com/ap0ught/space-haven-mods/tree/main/Pack%20Wagon">Source</a>
+            <a href="https://www.nexusmods.com/spacehaven/mods/22">Nexus Mods</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h2>Less System Points</h2>
+            <span class="badge">Published</span>
+          </div>
+          <p>Reduces system point requirements for generators, hyperdrives, defenses, and craft.</p>
+          <ul>
+            <li>Config covers 17 different structures and ships</li>
+            <li>Defaults make most entries cost 0 or 1 system point</li>
+            <li>Hull stabilizer and fighters keep slightly higher defaults</li>
+          </ul>
+          <p class="meta">This is the configurable successor to Zero System Points.</p>
+          <div class="links">
+            <a href="https://github.com/ap0ught/space-haven-mods/tree/main/Less%20System%20Points">Source</a>
+            <a href="https://www.nexusmods.com/spacehaven/mods/20">Nexus Mods</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h2>Hyperdrive Mass Config</h2>
+            <span class="badge muted">Repository-only</span>
+          </div>
+          <p>Raises hyperdrive mass capacity and keeps both drive tiers configurable.</p>
+          <ul>
+            <li>X1 hyperdrive mass capacity: 3,200</li>
+            <li>Hyperium hyperdrive mass capacity: 1,800</li>
+          </ul>
+          <p class="meta">The repository README previously noted this one was not released to Nexus Mods.</p>
+          <div class="links">
+            <a href="https://github.com/ap0ught/space-haven-mods/tree/main/Hyperdrive%20Mass%20Config">Source</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h2>Zero System Points</h2>
+            <span class="badge muted">Deprecated</span>
+          </div>
+          <p>An older, non-configurable version of the system point tweaks kept for reference.</p>
+          <ul>
+            <li>Sets hull stabilizer, shield, scanner, jammer, and turrets to 0</li>
+            <li>Superseded by Less System Points</li>
+          </ul>
+          <p class="meta">Marked as deprecated directly in <code>info.xml</code>.</p>
+          <div class="links">
+            <a href="https://github.com/ap0ught/space-haven-mods/tree/main/Zero%20System%20Points">Source</a>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

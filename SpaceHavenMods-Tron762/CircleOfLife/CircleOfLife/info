@@ -1,0 +1,8 @@
+<mod>
+  <name>Circle Of Life</name>
+  <description>Harvest corpses for valuable resources.</description>
+  <minimumLoaderVersion>0.0.2</minimumLoaderVersion>
+  <gameVersions>
+    <v>0.4.1</v>
+  </gameVersions>
+</mod>

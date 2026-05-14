@@ -1,0 +1,8 @@
+<mod>
+  <name>Food Expanded</name>
+  <description>Expands the food options available. As of the current version, adds two crops: "All in One ChemCrop" Requiring 2 water and 1 chemicals to provide 2 fruit, 2 veg and 1 meat (Thanks to Kyanide for assistance with balancing). "Oxygenating Crop": A slow growing crop of vegetables which oxygenate the room they are planted in. Half as effective as an Oxygen generator.</description>
+  <minimumLoaderVersion>0.0.2</minimumLoaderVersion>
+  <gameVersions>
+    <v>0.4.1</v>
+  </gameVersions>
+</mod>

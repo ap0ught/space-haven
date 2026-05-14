@@ -1,0 +1,217 @@
+<data>
+	<Product>
+	
+		<product _name="workbench" eid="97620601" interactive="true" itemScrapper="false" processValue="100" scrapper="false" smelter="true" startOnly="false" type="Process">
+			<needs />
+			<products />
+			<list>
+				<processes>
+					<l _name="Energium to Energy rod" process="964" />
+					<l _name="Hyperium to Hyperfuel" process="965" />
+					<l _name="Carbon Base Metals to Steel Plates" process="1931" />
+					<l _name="Noble Metals Base Metals to Electronics Component" process="966" />
+					<l _name="Soft Scrap to Soft block" process="1876" />
+					<l _name="Infra Scrap to Infrablock" process="1877" />
+					<l _name="Hull Scrap to Hull Block" process="1887" />
+					<l _name="Energy Scrap to Infrablock Energy rod" process="1948" />
+					<l _name="Tech Scrap to Infrablock Electronics Component" process="1949" />
+					<l _name="Fibers to Fabrics" process="1935" />
+					<l _name="Steel Plates Fabrics to Soft block" process="1927" />
+					<l _name="Steel Plates to Hull Block" process="1760" />
+					<l _name="Steel Plates Electronics Component to Infrablock" process="183" />
+					<l _name="Infrablock Optronics Component to Techblock" process="959" />
+					<l _name="Infrablock Energy Cell to Energy block" process="1928" />
+					<l _name="Techblock Energy block Quantronics Component to Superblock" process="1929" />
+					<l _name="Electronics Component Chemicals to Optronics Component" process="1942" />
+					<l _name="Optronics Component Energy Cell to Quantronics Component" process="1943" />
+					<l _name="Energy rod Electronics Component to Energy Cell" process="1930" />
+				</processes>
+			</list>
+			<desc />
+		</product>					
+
+		<product _name="chemicals" eid="97620602" interactive="true" itemScrapper="false" processValue="100" scrapper="false" smelter="true" startOnly="false" type="Process">
+			<needs />
+			<products />
+			<list>
+				<processes>
+					<l _name="Ice to Water" process="41" />					
+					<l _name="Raw Chemicals to Chemicals" process="2011" />
+					<l _name="Carbon Chemicals to Plastics" process="2416" />
+					<l _name="Chemicals Fabrics Plastics to Medical Supplies" process="2054" />
+					<l _name="Chemicals Water Fruits to IV Fluid" process="2059" />	
+				</processes>
+			</list>
+			<desc />
+		</product>							
+		</Product>							
+		<Element>
+		<me _name="Chemical Refinery" alternateY="false" costGroup="875" ec="17" mid="97620605" nonSymmetrical="false" offsetRot="R0">
+			<data />
+			<linked>
+				<l damageGroup="0" eid="1" gridOffX="0" gridOffY="1" id="9762939" layer="0" rot="R0" />
+				<l damageGroup="0" eid="2" gridOffX="1" gridOffY="1" id="945" layer="0" rot="R0" />
+				<l damageGroup="0" eid="3" gridOffX="2" gridOffY="1" id="940" layer="0" rot="R0" />
+				<l damageGroup="0" eid="4" gridOffX="0" gridOffY="2" id="946" layer="0" rot="R90" />
+				<l damageGroup="0" eid="7" gridOffX="1" gridOffY="2" id="944" layer="0" rot="R0" />
+				<l damageGroup="0" eid="13" gridOffX="2" gridOffY="2" id="946" layer="0" rot="R270" />
+				<l damageGroup="0" eid="15" gridOffX="0" gridOffY="0" id="1093" layer="0" rot="R0" />
+				<l damageGroup="0" eid="16" gridOffX="1" gridOffY="0" id="1081" layer="0" rot="R0" />
+				<l damageGroup="0" eid="17" gridOffX="2" gridOffY="0" id="1093" layer="0" rot="R0" />
+			</linked>
+			<events />
+			<objectInfo buildInstant="false" debugOnly="false" disableAirlockTest="false" disableBuildTest="false" disableRotation="false" placeInMenu="9" systemPoints="0" viewMode="Normal">
+				<cu>
+					<groups>
+						<l buildTools="60" rep="875">
+							<customPrice>
+								<l elementId="162" howMuch="3" />
+								<l elementId="930" howMuch="3" />
+							</customPrice>
+						</l>
+					</groups>
+				</cu>
+				<name tid="97620606" />
+				<desc tid="97620606" />
+				<guiIcon aid="build_icon_938" />
+				<subCat id="1510" />
+				<difficultyLevel level="5" skill="Construction" />
+			</objectInfo>
+		</me>
+		
+		<me _name="Workbench" alternateY="false" costGroup="0" ec="9" mid="97620603" nonSymmetrical="false" offsetRot="R0">
+			<data />
+			<linked>
+				<l damageGroup="0" eid="1" gridOffX="0" gridOffY="0" id="97621975" layer="0" rot="R0" />
+				<l damageGroup="0" eid="2" gridOffX="0" gridOffY="1" id="1976" layer="0" rot="R0" />
+				<l damageGroup="0" eid="3" gridOffX="1" gridOffY="1" id="1977" layer="0" rot="R0" />
+				<l damageGroup="0" eid="4" gridOffX="2" gridOffY="1" id="1981" layer="0" rot="R0" />
+				<l damageGroup="0" eid="5" gridOffX="3" gridOffY="1" id="1978" layer="0" rot="R0" />
+				<l damageGroup="0" eid="6" gridOffX="3" gridOffY="0" id="1979" layer="0" rot="R0" />
+				<l damageGroup="0" eid="9" gridOffX="2" gridOffY="0" id="1982" layer="0" rot="R0" />
+			</linked>
+			<events />
+			<objectInfo buildInstant="false" debugOnly="false" disableAirlockTest="false" disableBuildTest="false" disableRotation="false" placeInMenu="11" systemPoints="0" viewMode="Normal">
+				<cu>
+					<groups>
+						<l buildTools="60" rep="875">
+							<customPrice>
+								<l elementId="162" howMuch="3" />
+								<l elementId="930" howMuch="3" />
+							</customPrice>
+						</l>
+					</groups>
+				</cu>
+				<name tid="97620604" />
+				<desc tid="97620604" />
+				<guiIcon aid="build_icon_1980" />
+				<subCat id="1510" />
+				<restrictions>
+					<l gridX="0" gridY="-1" sizeX="4" sizeY="1" type="Floor" />
+					<l gridX="1" gridY="0" sizeX="1" sizeY="1" type="Floor" />
+				</restrictions>
+				<difficultyLevel level="5" skill="Construction" />
+			</objectInfo>
+		</me>
+
+		
+		<me alternateY="false" costGroup="875" ec="1" mid="97621975" nonSymmetrical="false" offsetRot="R0">
+			<data>
+				<l eid="1" gridOffX="0" gridOffY="0" layer="0" type="Object">
+					<element id="0" lightValue="Medium" renderOnFloor="false" userTogglable="false" walkGridCost="255">
+						<definedStates>
+							<l playAnimation="false" state="Standby">
+								<r0 aid="electroFab1F" flx="false" />
+								<r90 aid="electroFab1Fm" flx="true" />
+								<r180 aid="electroFab1B" flx="false" />
+								<r270 aid="electroFab1Bm" flx="true" />
+								<tasks>
+									<l dir="D7" gridOffX="0" gridOffY="-1" setStateInUse="true" task="StandWork" usage="Both">
+										<r0offset charOffX="-16" charOffY="0" />
+										<r180offset charOffX="14" charOffY="-2" />
+										<r90offset charOffX="0" charOffY="6" />
+										<r270offset charOffX="0" charOffY="-10" />
+									</l>
+								</tasks>
+							</l>
+							<l playAnimation="true" state="InUse">
+								<r0 aid="electroFab1F" flx="false" />
+								<r90 aid="electroFab1Fm" flx="true" />
+								<r180 aid="electroFab1B" flx="false" />
+								<r270 aid="electroFab1Bm" flx="true" />
+							</l>
+						</definedStates>
+						<features addFacilityIcons="false" inUseState="true" noPressureDmg="false" normalState="true" produceInNormal="false">
+							<produces>
+								<l product="97620601" suction="false" usePowerPerSec="20.0" valuePerSec="10">
+									<heat temp="Medium" type="HeatTo" />
+									<gas hazardGasPerSec="1" />
+								</l>
+							</produces>
+							<stateWatchdog autoproduce="false" />
+							<noiseAndComfort onlyWhenInuse="false" reduceNegative="false">
+								<radiusBeauty radius="10" roomDrop="40" value="-40" />
+							</noiseAndComfort>
+						</features>
+						<boxHatch boxX="7" boxY="-4" flipR90="true" in="true" out="false" x="7" y="-4">
+							<activate activateOffX="0" activateOffY="-1" />
+							<r90Pos boxX="-23" boxY="4" x="-23" y="4" />
+						</boxHatch>
+						<commonPower />
+					</element>
+				</l>
+			</data>
+			<linked />
+			<events />
+		</me>
+		
+		<me alternateY="false" costGroup="875" ec="1" mid="9762939" nonSymmetrical="false" offsetRot="R0">
+			<data>
+				<l eid="1" gridOffX="0" gridOffY="0" layer="0" type="Object">
+					<element id="0" lightValue="Medium" renderOnFloor="false" userTogglable="false" walkGridCost="255">
+						<definedStates>
+							<l playAnimation="false" state="Standby">
+								<r0 aid="chemRefPart1FIH" flx="false" />
+								<r90 aid="chemRefPart1BIH" flx="true" />
+								<r180 aid="chemRefPart1BIM" flx="false" />
+								<r270 aid="chemRefPart1FIM" flx="true" />
+								<tasks>
+									<l dir="D7" gridOffX="0" gridOffY="-1" setStateInUse="true" task="StandWork" usage="Both">
+										<activate activateOffX="0" activateOffY="-1" />
+										<r0offset charOffX="4" charOffY="4" />
+										<r180offset charOffX="0" charOffY="0" />
+									</l>
+								</tasks>
+							</l>
+							<l playAnimation="false" state="InUse">
+								<r0 aid="chemRefPart1FIH" flx="false" />
+								<r90 aid="chemRefPart1BIH" flx="true" />
+								<r180 aid="chemRefPart1BIM" flx="false" />
+								<r270 aid="chemRefPart1FIM" flx="true" />
+							</l>
+						</definedStates>
+						<features addFacilityIcons="false" inUseState="true" noPressureDmg="false" normalState="true" produceInNormal="false">
+							<produces>
+								<l product="97620602" suction="false" usePowerPerSec="15.0" valuePerSec="10">
+									<heat temp="Medium" type="HeatTo" />
+									<gas hazardGasPerSec="3" />
+								</l>
+							</produces>
+							<stateWatchdog autoproduce="false" />
+							<noiseAndComfort onlyWhenInuse="false" reduceNegative="false">
+								<radiusBeauty radius="12" roomDrop="40" value="-60" />
+							</noiseAndComfort>
+						</features>
+						<boxHatch boxX="28" boxY="5" flipR90="true" in="true" out="false" x="28" y="5">
+							<activate activateOffX="0" activateOffY="-1" />
+							<r90Pos boxX="-15" boxY="-1" x="-15" y="-1" />
+						</boxHatch>
+						<commonPower />
+					</element>
+				</l>
+			</data>
+			<linked />
+			<events />
+		</me>		
+  </Element>
+</data>

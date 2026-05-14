@@ -1,0 +1,123 @@
+<data>
+	<Product>
+	<product _name="Oxygen to Water" eid="976262" interactive="false" itemScrapper="false" processValue="100" scrapper="false" smelter="false" startOnly="false" type="Process">
+			<needs>
+				<l _name="Oxygen" consumeEvery="1" element="63" howMuch="25" />
+			</needs>
+			<products>
+				<l _name="Water" element="16" howMuch="1" produceEvery="60" />
+			</products>
+			<desc />
+		</product>
+		
+	</Product>
+  <Element>
+  
+  		<me _name="Moisture Vaporator" alternateY="false" costGroup="0" ec="4" mid="9762927" nonSymmetrical="false" offsetRot="R0">
+			<data />
+			<linked>
+				<l damageGroup="0" eid="1" gridOffX="0" gridOffY="1" id="926" layer="0" rot="R0" />
+				<l damageGroup="0" eid="2" gridOffX="1" gridOffY="1" id="9762862" layer="0" rot="R270" />
+				<l damageGroup="0" eid="3" gridOffX="0" gridOffY="0" id="1093" layer="0" rot="R0" />
+				<l damageGroup="0" eid="4" gridOffX="1" gridOffY="0" id="1081" layer="0" rot="R0" />
+			</linked>
+			<events />
+			<objectInfo buildInstant="false" debugOnly="false" disableAirlockTest="false" disableBuildTest="false" disableRotation="false" placeInMenu="1" systemPoints="0" viewMode="Oxygen">
+				<cu>
+					<groups>
+						<l buildTools="0" rep="875">
+							<customPrice>
+								<l elementId="162" howMuch="2" />
+								<l elementId="173" howMuch="1" />
+							</customPrice>
+						</l>
+						<l buildTools="20" rep="951">
+							<customPrice>
+								<l elementId="162" howMuch="1" />
+								<l elementId="930" howMuch="1" />
+							</customPrice>
+						</l>
+					</groups>
+				</cu>
+				<name tid="97620601" />
+				<desc tid="97620601" />
+				<guiIcon aid="build_icon_927" />
+				<subCat id="1508" />
+				<restrictions>
+					<l gridX="0" gridY="0" sizeX="1" sizeY="1" type="Floor" />
+				</restrictions>
+				<difficultyLevel level="2" skill="Construction" />
+			</objectInfo>
+		</me>
+  
+  		<me alternateY="false" costGroup="875" ec="6" mid="9762862" nonSymmetrical="false" offsetRot="R0">
+			<data />
+			<linked>
+				<l damageGroup="0" eid="1" gridOffX="0" gridOffY="0" id="9762861" layer="0" rot="R0" />
+				<l damageGroup="0" eid="2" gridOffX="0" gridOffY="1" id="859" layer="0" rot="R0" />
+				<l damageGroup="0" eid="3" gridOffX="1" gridOffY="0" id="860" layer="0" rot="R0" />
+				<l damageGroup="0" eid="4" gridOffX="1" gridOffY="1" id="858" layer="0" rot="R270" />
+				<l damageGroup="0" eid="5" gridOffX="1" gridOffY="0" id="863" layer="0" rot="R0" />
+			</linked>
+			<events />
+		</me>
+		  
+  <me alternateY="false" costGroup="951" ec="3" mid="9762861" nonSymmetrical="false" offsetRot="R0">
+			<data>
+				<l eid="2" gridOffX="0" gridOffY="0" layer="0" type="Object">
+					<element id="0" lightValue="Medium" renderOnFloor="false" userTogglable="false" walkGridCost="255">
+						<definedStates>
+							<l playAnimation="false" state="InUse">
+								<r0 aid="lifesupportPart2FH" flx="false" />
+								<r90 aid="null" flx="false" />
+								<r180 aid="lifeSupportPart2BH" flx="false" />
+								<r270 aid="null" flx="false" />
+							</l>
+							<l playAnimation="false" state="Standby">
+								<r0 aid="lifesupportPart2FH" flx="false" />
+								<r90 aid="null" flx="false" />
+								<r180 aid="lifeSupportPart2BH" flx="false" />
+								<r270 aid="null" flx="false" />
+								<r0off x="0" y="0" />
+								<r180off x="0" y="0" />
+							</l>
+						</definedStates>
+						<additionaFullLit atInuse="true" atNoPower="false" atStandby="true" mirX="0" mirY="0" x="0" y="0">
+							<r0 aid="lifeSupport2Lights1" flx="false" />
+							<r90 aid="null" flx="false" />
+							<r180 aid="null" flx="false" />
+							<r270 aid="null" flx="false" />
+						</additionaFullLit>
+						<features addFacilityIcons="false" inUseState="true" noPressureDmg="false" normalState="true" produceInNormal="false">
+							<produces>
+								<l product="976262" suction="false" usePowerPerSec="1.0" valuePerSec="10">
+									<logic is="GreaterThan" resource="63" value="100" />
+									<logic is="MaxInv" resource="16" value="50" />
+									<heat temp="Low" type="HeatTo" />
+								</l>
+							</produces>
+							<stateWatchdog autoproduce="true" />
+							<noiseAndComfort onlyWhenInuse="false" reduceNegative="false">
+								<noise noise="10.0">
+									<audio auid="null" />
+								</noise>
+								<visualBeauty radius="5" value="-10" />
+								<radiusBeauty radius="4" roomDrop="2" value="-10" />
+							</noiseAndComfort>							
+						</features>
+						<boxHatch boxX="15" boxY="1" flipR90="false" in="true" out="true" x="17" y="0">
+							<activate activateOffX="0" activateOffY="-1" />
+							<r90Pos boxX="-15" boxY="1" x="-17" y="0" />
+						</boxHatch>
+						<commonPower />						
+					</element>
+				</l>
+			</data>
+			<linked>
+				<l damageGroup="0" eid="3" gridOffX="0" gridOffY="0" id="863" layer="0" rot="R0" />
+			</linked>
+			<events />
+		</me>
+  
+  </Element>
+</data>
