@@ -1,0 +1,11 @@
+<mod>
+  <name>EffsLargerFleet</name>
+  <description>
+  LEGACY PLACEHOLDER — imported from the Nexus Mods Space Haven section (~2020).
+  Originally increased fleet/ship count limits, allowing the player to field more
+  ships simultaneously. Patch targets must be re-verified against 1.0 fleet/craft data files.
+  </description>
+  <minimumLoaderVersion>0.10.0</minimumLoaderVersion>
+  <version>0.0.1-legacy</version>
+  <author>Eff (legacy import)</author>
+</mod>

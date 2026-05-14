@@ -1,0 +1,11 @@
+<mod>
+  <name>DreamShipMod</name>
+  <description>
+  LEGACY PLACEHOLDER — imported from the Space Haven alpha modding community (2019).
+  Originally modified the player's starting ship layout, providing a custom vessel
+  configuration at game start. Patch targets must be re-verified against 1.0 data files.
+  </description>
+  <minimumLoaderVersion>0.10.0</minimumLoaderVersion>
+  <version>0.0.1-legacy</version>
+  <author>Unknown (legacy import)</author>
+</mod>

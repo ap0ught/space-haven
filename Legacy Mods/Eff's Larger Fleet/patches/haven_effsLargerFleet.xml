@@ -1,0 +1,15 @@
+<!-- Eff's Larger Fleet — LEGACY PLACEHOLDER
+     Original mod: Nexus Mods Space Haven section (~2020), author: Eff
+     TODO: Identify the correct fleet/craft limit element IDs in 1.0 data files and
+           replace the stub Operation below with real XPath patch operations.
+-->
+<Patch>
+  <!-- Example stub — update xpath, attribute, and value for 1.0 -->
+  <!--
+  <Operation Class="AttributeSet">
+    <xpath>/data/GameSettings/setting[@key="maxFleetSize"]</xpath>
+    <attribute>value</attribute>
+    <value>10</value>
+  </Operation>
+  -->
+</Patch>
