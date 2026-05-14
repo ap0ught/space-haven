@@ -38,6 +38,8 @@ This repository now also includes the upstream MIT-licensed [`SpaceHavenModTempl
 
 The two bundled AspectJ jar files and the upstream `target/` build output were intentionally not copied into this repository snapshot; the template README already documents how to obtain those dependencies.
 
+An additional utility script has also been imported at [`developer-tools/space_haven_save_editor.py`](./developer-tools/space_haven_save_editor.py), attributed to the gist by [`vivalenta`](https://gist.github.com/vivalenta/f079f515a2c4aab9278f14a0b7eed68f#file-space_haven_save_editor-py).
+
 ## Tron762-SpaceHavenMods attribution
 
 The branch [`Tron762-SpaceHavenMods`](https://github.com/ap0ught/space-haven-mods/tree/Tron762-SpaceHavenMods) has been merged into this repository and imported under [`SpaceHavenMods-Tron762/`](./SpaceHavenMods-Tron762/). These files are attributed to the original `Tron762/SpaceHavenMods` mod collection and preserve its upstream README context.
