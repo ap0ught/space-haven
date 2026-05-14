@@ -1,0 +1,135 @@
+<data>
+	<Product>
+			<product _name="AllInOne" eid="97620201" type="Crop">
+			<name tid="97620250" />
+			<GUIAnimation aid="spaceFoodIcon1" />
+			<stages>
+				<l co2PerMinute="3" lightNeeded="Medium" maxTemp="313" minTemp="273" oxygenPerMinute="100" stage="1" time="30">
+					<needs>
+						<l consumeEvery="2" element="176" howMuch="1" />
+					</needs>
+					<anims>
+						<l dir="D1" type="Single" useFlipped="true">
+							<animation aid="potato1" />
+						</l>
+					</anims>
+				</l>
+				<l co2PerMinute="3" lightNeeded="Medium" maxTemp="313" minTemp="273" oxygenPerMinute="100" stage="2" time="30">
+					<tend penalty="-50" />
+					<anims>
+						<l dir="D1" type="Single" useFlipped="true">
+							<animation aid="potato2" />
+						</l>
+					</anims>
+				</l>
+				<l co2PerMinute="3" lightNeeded="Medium" maxTemp="313" minTemp="273" oxygenPerMinute="100" stage="3" time="30">
+					<needs>
+						<l consumeEvery="2" element="16" howMuch="5" />
+					</needs>
+					<anims>
+						<l dir="D1" type="Single" useFlipped="true">
+							<animation aid="potato3" />
+						</l>
+					</anims>
+				</l>
+				<l co2PerMinute="3" lightNeeded="Medium" maxTemp="313" minTemp="273" oxygenPerMinute="100" stage="4" time="30">
+					<tend penalty="-50" />
+					<anims>
+						<l dir="D1" type="Single" useFlipped="true">
+							<animation aid="potato4" />
+						</l>
+					</anims>
+				</l>
+				<l co2PerMinute="3" lightNeeded="Medium" maxTemp="313" minTemp="273" oxygenPerMinute="100" stage="5" time="10">
+					<harvestable>
+						<products>
+							<l element="15" howMuch="2" produceEvery="1" />
+							<l element="706" howMuch="2" produceEvery="1" />
+							<l element="707" howMuch="1" produceEvery="1" />
+						</products>
+					</harvestable>
+					<anims>
+						<l dir="D1" type="Single" useFlipped="true">
+							<animation aid="potato5" />
+						</l>
+					</anims>
+				</l>
+			</stages>
+			<plantingPenalty penalty="-50" />
+			<difficulty level="2" skill="Farming" />
+			<desc tid="97620251" />
+		</product>
+
+			<product _name="Oxygenating Vegetable Crop" eid="97620202" type="Crop">
+			<name tid="97620252" />
+			<GUIAnimation aid="o2resourceIcon" />
+			<stages>
+				<l co2PerMinute="3" lightNeeded="Medium" maxTemp="313" minTemp="273" oxygenPerMinute="100" stage="1" time="1900">
+					<needs>
+						<l consumeEvery="5" element="176" howMuch="1" />
+					</needs>
+					<products>
+						<l element="63" howMuch="25" produceEvery="1" />
+					</products>					
+					<anims>
+						<l dir="D1" type="Single" useFlipped="true">
+							<animation aid="potato1" />
+						</l>
+					</anims>
+				</l>
+				<l co2PerMinute="3" lightNeeded="Medium" maxTemp="313" minTemp="273" oxygenPerMinute="100" stage="2" time="1900">
+					<tend penalty="-50" />
+					<products>
+						<l element="63" howMuch="25" produceEvery="1" />
+					</products>							
+					<anims>
+						<l dir="D1" type="Single" useFlipped="true">
+							<animation aid="potato2" />
+						</l>
+					</anims>
+				</l>
+				<l co2PerMinute="3" lightNeeded="Medium" maxTemp="313" minTemp="273" oxygenPerMinute="100" stage="3" time="1900">
+					<needs>
+						<l consumeEvery="5" element="16" howMuch="1" />
+					</needs>
+					<products>
+						<l element="63" howMuch="25" produceEvery="1" />
+					</products>							
+					<anims>
+						<l dir="D1" type="Single" useFlipped="true">
+							<animation aid="potato3" />
+						</l>
+					</anims>
+				</l>
+				<l co2PerMinute="3" lightNeeded="Medium" maxTemp="313" minTemp="273" oxygenPerMinute="100" stage="4" time="1900">
+					<tend penalty="-50" />
+					<products>
+						<l element="63" howMuch="25" produceEvery="1" />
+					</products>						
+					<anims>
+						<l dir="D1" type="Single" useFlipped="true">
+							<animation aid="potato4" />
+						</l>
+					</anims>
+				</l>
+				<l co2PerMinute="3" lightNeeded="Medium" maxTemp="313" minTemp="273" oxygenPerMinute="100" stage="5" time="10">
+					<harvestable>
+						<products>
+							<l element="63" howMuch="25" produceEvery="1" />
+							<l element="15" howMuch="1" produceEvery="1" />
+						</products>
+					</harvestable>
+					<anims>
+						<l dir="D1" type="Single" useFlipped="true">
+							<animation aid="potato5" />
+						</l>
+					</anims>
+				</l>
+			</stages>
+			<plantingPenalty penalty="-10" />
+			<difficulty level="2" skill="Farming" />
+			<desc tid="97620253" />
+		</product>
+		
+	</Product>
+</data>

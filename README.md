@@ -10,6 +10,7 @@ Source code for a small collection of Space Haven mods by Killparadise, plus an 
 - Pack Wagon
 - Less System Points
 - Zero System Points *(deprecated)*
+- SpaceHavenMods-Tron762 import set *(merged from `Tron762-SpaceHavenMods` branch)*
 
 ## Where these mods came from
 
@@ -37,6 +38,15 @@ This repository now also includes the upstream MIT-licensed [`SpaceHavenModTempl
 
 The two bundled AspectJ jar files and the upstream `target/` build output were intentionally not copied into this repository snapshot; the template README already documents how to obtain those dependencies.
 
-## External mods not vendored
+## Tron762-SpaceHavenMods attribution
 
-The zip mods published in [`Tron762/SpaceHavenMods`](https://github.com/Tron762/SpaceHavenMods) were reviewed, but that repository does not publish a license. Because of that, they are not copied into this repository.
+The branch [`Tron762-SpaceHavenMods`](https://github.com/ap0ught/space-haven-mods/tree/Tron762-SpaceHavenMods) has been merged into this repository and imported under [`SpaceHavenMods-Tron762/`](./SpaceHavenMods-Tron762/). These files are attributed to the original `Tron762/SpaceHavenMods` mod collection and preserve its upstream README context.
+
+Imported mods in this set include:
+
+- CircleOfLife
+- CompactWorkbenches
+- FoodMod
+- MoistureVaporator
+- MoreWaterFromIce
+- RefineryMod

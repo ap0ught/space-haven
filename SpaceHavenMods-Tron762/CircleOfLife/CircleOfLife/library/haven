@@ -1,0 +1,83 @@
+<data>
+	<Item>		
+		<item eid="0" handness="TwoHand" mid="1954">
+			<name tid="1807" />
+			<desc tid="1808" />
+			<anims>
+				<l dir="D1" type="Single" useFlipped="false">
+					<animation aid="m1carried1" />
+				</l>
+				<l dir="D2" type="Single" useFlipped="false">
+					<animation aid="m1carried2" />
+				</l>
+				<l dir="D3" type="Single" useFlipped="false">
+					<animation aid="m1carried3" />
+				</l>
+				<l dir="D4" type="Single" useFlipped="false">
+					<animation aid="m1carried4" />
+				</l>
+				<l dir="D6" type="Single" useFlipped="false">
+					<animation aid="m1carried6" />
+				</l>
+				<l dir="D7" type="Single" useFlipped="false">
+					<animation aid="m1carried7" />
+				</l>
+				<l dir="D8" type="Single" useFlipped="false">
+					<animation aid="m1carried8" />
+				</l>
+				<l dir="D9" type="Single" useFlipped="false">
+					<animation aid="m1carried9" />
+				</l>
+			</anims>
+			<invIcon aid="humanCorpseIcon1" />
+			<corpse>
+				<butcher>
+					<l element="985" howMuch="3" produceEvery="1" />
+					<l element="16" howMuch="5" produceEvery="1" />
+				</butcher>
+				<compost />
+				<butcherEffect effect="2415" />
+			</corpse>
+		</item>
+		<item eid="0" handness="TwoHand" mid="1955">
+			<name tid="1805" />
+			<desc tid="1806" />
+			<anims>
+				<l dir="D1" type="Single" useFlipped="false">
+					<animation aid="spider1Corpse1" />
+				</l>
+				<l dir="D2" type="Single" useFlipped="false">
+					<animation aid="spider1Corpse1" />
+				</l>
+				<l dir="D3" type="Single" useFlipped="false">
+					<animation aid="spider1Corpse1" />
+				</l>
+				<l dir="D4" type="Single" useFlipped="false">
+					<animation aid="spider1Corpse1" />
+				</l>
+				<l dir="D6" type="Single" useFlipped="false">
+					<animation aid="spider1Corpse1" />
+				</l>
+				<l dir="D7" type="Single" useFlipped="false">
+					<animation aid="spider1Corpse1" />
+				</l>
+				<l dir="D8" type="Single" useFlipped="false">
+					<animation aid="spider1Corpse1" />
+				</l>
+				<l dir="D9" type="Single" useFlipped="false">
+					<animation aid="spider1Corpse1" />
+				</l>
+			</anims>
+			<invIcon aid="monster1CorpseIcon" />
+			<corpse>
+				<butcher>
+					<l element="984" howMuch="3" produceEvery="1" />
+					<l element="170" howMuch="3" produceEvery="1" />
+					<l element="176" howMuch="3" produceEvery="1" />
+				</butcher>
+				<compost />
+				<butcherEffect effect="1475" />
+			</corpse>
+		</item>
+	</Item>		
+</data>

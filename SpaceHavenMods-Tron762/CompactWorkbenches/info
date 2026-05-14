@@ -1,0 +1,8 @@
+<mod>
+  <name>Compact workbenches</name>
+  <description>Compact workbench layout tweak pack for smaller production footprints.</description>
+  <minimumLoaderVersion>0.0.2</minimumLoaderVersion>
+  <gameVersions>
+    <v>0.4.1</v>
+  </gameVersions>
+</mod>

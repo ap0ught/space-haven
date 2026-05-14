@@ -1,0 +1,649 @@
+<data>
+	<Product>
+		
+		<product _name="Refined Base Metals" eid="9762157" elementType="Defined" item="997" type="Elementary">
+			<name tid="9762184" />
+			<GUIAnimation aid="steelPlatesIcon1" />
+			<sort p="13" s="5" />
+			<desc tid="9762184" />
+		</product>	
+		
+		<product _name="Refined Noble Metals" eid="9762169" elementType="Defined" item="997" type="Elementary">
+			<name tid="9762190" />
+			<GUIAnimation aid="steelPlatesIcon1" />
+			<sort p="14" s="5" />
+			<desc tid="9762190" />
+		</product>
+
+		<product _name="Industrial Waste" eid="97620512" elementType="Defined" item="997" type="Elementary">
+			<name tid="97620513" />
+			<GUIAnimation aid="hazardResourceIcon" />
+			<sort p="13" s="5" />
+			<desc tid="97620513" />
+		</product>			
+
+		<product _name="Fuel Waste" eid="97620520" elementType="Defined" item="997" type="Elementary">
+			<name tid="97620521" />
+			<GUIAnimation aid="hazardResourceIcon" />
+			<sort p="13" s="5" />
+			<desc tid="97620513" />
+		</product>			
+
+		<product _name="Chemical Waste" eid="97620522" elementType="Defined" item="997" type="Elementary">
+			<name tid="97620523" />
+			<GUIAnimation aid="hazardResourceIcon" />
+			<sort p="13" s="5" />
+			<desc tid="97620513" />
+		</product>			
+
+		<product _name="Raw Chemicals to Chemicals" eid="2011" interactive="true" itemScrapper="false" processValue="100" scrapper="false" smelter="false" startOnly="false" type="Process">
+			<needs>
+				<l _name="Raw Chemicals" consumeEvery="5" element="171" howMuch="1" />
+			</needs>
+			<products>
+				<l _name="Chemicals" element="176" howMuch="1" produceEvery="1" />
+				<l _name="Chemical Waste" element="97620522" howMuch="1" produceEvery="4" />
+			</products>
+			<difficulty level="3" skill="Industry" />
+			<desc />
+		</product>
+		
+		<product _name="Energium to Energy rod" eid="964" interactive="true" itemScrapper="false" processValue="100" scrapper="false" smelter="false" startOnly="false" type="Process">
+			<needs>
+				<l _name="Energium" consumeEvery="5" element="158" howMuch="1" />
+			</needs>
+			<products>
+				<l _name="Energy rod" element="174" howMuch="1" produceEvery="1" />
+				<l _name="Fuel Waste" element="97620520" howMuch="1" produceEvery="7" />
+			</products>
+			<difficulty level="3" skill="Industry" />
+			<desc />
+		</product>
+		
+		<product _name="Hyperium to Hyperfuel" eid="965" interactive="true" itemScrapper="false" processValue="100" scrapper="false" smelter="false" startOnly="false" type="Process">
+			<needs>
+				<l _name="Hyperium" consumeEvery="1" element="172" howMuch="2" />
+			</needs>
+			<products>
+				<l _name="Hyperfuel" element="178" howMuch="1" produceEvery="1" />
+				<l _name="Fuel Waste" element="97620520" howMuch="1" produceEvery="2" />
+			</products>
+			<difficulty level="3" skill="Industry" />
+			<desc />
+		</product>		
+
+		<product _name="Fuel Waste to Energium" eid="9762964" interactive="true" itemScrapper="false" processValue="100" scrapper="false" smelter="false" startOnly="false" type="Process">
+			<needs>
+				<l _name="Fuel Waste" consumeEvery="1" element="97620520" howMuch="1" />
+			</needs>
+			<products>
+				<l _name="Energium" element="158" howMuch="1" produceEvery="2" />
+				<l _name="Carbon" element="170" howMuch="1" produceEvery="1" />
+			</products>
+			<difficulty level="3" skill="Industry" />
+			<desc />
+		</product>
+		
+		<product _name="Fuel Waste to Hyperfuel" eid="9762965" interactive="true" itemScrapper="false" processValue="100" scrapper="false" smelter="false" startOnly="false" type="Process">
+			<needs>
+				<l _name="Fuel Waste" consumeEvery="1" element="97620520" howMuch="1" />
+			</needs>
+			<products>
+				<l _name="Hyperium" element="172" howMuch="1" produceEvery="2" />
+				<l _name="Carbon" element="170" howMuch="1" produceEvery="1" />
+				
+			</products>
+			<difficulty level="3" skill="Industry" />
+			<desc />
+		</product>				
+
+		<product _name="Chemical waste to Chemicals" eid="97622011" interactive="true" itemScrapper="false" processValue="100" scrapper="false" smelter="false" startOnly="false" type="Process">
+			<needs>
+				<l _name="Chemicals Waste" consumeEvery="1" element="97620522" howMuch="1" />
+			</needs>
+			<products>
+				<l _name="Chemical " element="176" howMuch="1" produceEvery="2" />
+			</products>
+			<difficulty level="3" skill="Industry" />
+			<desc />
+		</product>		
+		
+		<product _name="Fuel Waste Recycling" eid="9762960" interactive="true" itemScrapper="false" processValue="100" scrapper="false" smelter="true" startOnly="false" type="Process">
+			<needs />
+			<products />
+			<list>
+				<processes>
+					<l _name="Fuel Waste to Energium" process="9762964" />
+					<l _name="Fuel Waste to Hyperium" process="9762965" />
+				</processes>
+			</list>
+			<desc />
+		</product>		
+		
+		<product _name="Refined Noble Metals Refined Base Metals to Electronics Component" eid="966" interactive="true" itemScrapper="false" processValue="100" scrapper="false" smelter="false" startOnly="false" type="Process">
+			<needs>
+				<l _name="Refined Noble Metals" consumeEvery="5" element="9762169" howMuch="1" />
+				<l _name="Refined Base Metals" consumeEvery="5" element="9762157" howMuch="1" />
+			</needs>
+			<products>
+				<l _name="Electronics Component" element="173" howMuch="1" produceEvery="1" />
+			</products>
+			<difficulty level="3" skill="Industry" />
+			<desc />
+		</product>		
+
+		<product _name="Carbon Refined Base Metals to Steel Plates" eid="1931" interactive="true" itemScrapper="false" processValue="100" scrapper="false" smelter="false" startOnly="false" type="Process">
+			<needs>
+				<l _name="Carbon" consumeEvery="5" element="170" howMuch="1" />
+				<l _name="Refined Base Metals" consumeEvery="5" element="9762157" howMuch="1" />
+			</needs>
+			<products>
+				<l _name="Steel Plates" element="1922" howMuch="1" produceEvery="1" />
+			</products>
+			<difficulty level="1" skill="Industry" />
+			<desc />
+		</product>
+
+		<product _name="Base Metals to Refined Base Metals" eid="97620501" interactive="true" itemScrapper="false" processValue="100" scrapper="false" smelter="false" startOnly="false" type="Process">
+			<needs>
+				<l _name="Base Metals" consumeEvery="2" element="157" howMuch="1" />
+			</needs>
+			<products>
+				<l _name="Refined Base Metals" element="9762157" howMuch="1" produceEvery="1" />
+			</products>
+			<difficulty level="1" skill="Industry" />
+			<desc />
+		</product>	
+		
+		<product _name="Recycle Waste to Base Metals (Manual)" eid="97620514" interactive="true" itemScrapper="false" processValue="100" scrapper="false" smelter="false" startOnly="false" type="Process">
+			<needs>
+				<l _name="Industrial Waste" consumeEvery="1" element="97620512" howMuch="1" />
+			</needs>
+			<products>
+				<l _name="Refined Base Metals" element="157" howMuch="1" produceEvery="2" />
+			</products>		
+			<difficulty level="1" skill="Industry" />
+			<desc />
+		</product>			
+
+		<product _name="Recycle Waste to Noble Metals (Manual)" eid="97620515" interactive="true" itemScrapper="false" processValue="100" scrapper="false" smelter="false" startOnly="false" type="Process">
+			<needs>
+				<l _name="Industrial Waste" consumeEvery="1" element="97620512" howMuch="1" />
+			</needs>
+			<products>
+				<l _name="Refined Noble Metals" element="169" howMuch="1" produceEvery="2" />
+			</products>		
+			<difficulty level="1" skill="Industry" />
+			<desc />
+		</product>					
+
+		
+		<product _name="Noble Metals to Refined Noble Metals" eid="97620502" interactive="true" itemScrapper="false" processValue="100" scrapper="false" smelter="false" startOnly="false" type="Process">
+			<needs>
+				<l _name="Noble Metals" consumeEvery="2" element="169" howMuch="1" />
+			</needs>
+			<products>
+				<l _name="Refined Noble Metals" element="9762169" howMuch="1" produceEvery="1" />
+			</products>
+			<difficulty level="1" skill="Industry" />
+			<desc />
+		</product>		
+
+		<product _name="" eid="181" interactive="true" itemScrapper="false" processValue="100" scrapper="false" smelter="true" startOnly="false" type="Process">
+			<needs />
+			<products />
+			<list>
+				<processes>
+					<l _name="Carbon Refined Metals to Steel Plates" process="1931" />
+					<l _name="Refine Base Metals (Manual)" process="97620501" />
+					<l _name="Refine Noble Metals (Manual)" process="97620502" />					
+				</processes>
+			</list>
+			<desc />
+		</product>		
+		
+		<product _name="Refine Base Metals Auto" eid="97620503" interactive="false" itemScrapper="false" processValue="100" scrapper="false" smelter="false" startOnly="false" type="Process">
+			<needs>
+				<l _name="Base Metals" consumeEvery="15" element="157" howMuch="1" />
+			</needs>
+			<products>
+				<l _name="Refined Base Metals" element="9762157" howMuch="1" produceEvery="5" />
+				<l _name="Industrial Waste" element="97620512" howMuch="1" produceEvery="10" />
+				
+			</products>
+			<desc />
+		</product>
+				
+		<product _name="Refine Noble Metals Auto" eid="97620504" interactive="false" itemScrapper="false" processValue="100" scrapper="false" smelter="false" startOnly="false" type="Process">
+			<needs>
+				<l _name="Noble Metals" consumeEvery="15" element="169" howMuch="1" />
+			</needs>
+			<products>
+				<l _name="Refined Noble Metals" element="9762169" howMuch="1" produceEvery="5" />
+				<l _name="Industrial Waste" element="97620512" howMuch="1" produceEvery="10" />				
+			</products>
+			<desc />
+		</product>
+		
+		<product _name="Waste Recycler" eid="97620511" interactive="true" itemScrapper="false" processValue="100" scrapper="false" smelter="true" startOnly="false" type="Process">
+			<needs />
+			<products />
+			<list>
+				<processes>	
+				
+					<l _name="Recycle Waste to Base Metals (Manual)" process="97620514" />					
+					<l _name="Recycle Waste to Noble Metals (Manual)" process="97620515" />			
+					<l _name="Fuel Waste to Energium" process="9762964" />
+					<l _name="Fuel Waste to Hyperium" process="9762965" />		
+					<l _name="Chem Waste to Chemicals" process="97622011" />					
+				</processes>
+			</list>
+			<desc />
+		</product>
+		
+	</Product>
+  <Element>
+		<me _name="Industrial Base Metal Refinery" alternateY="false" costGroup="0" ec="18" mid="9762947" nonSymmetrical="false" offsetRot="R0">
+			<data />
+			<linked>
+				<l damageGroup="0" eid="1" gridOffX="0" gridOffY="1" id="9762243" layer="0" rot="R90" />
+				<l damageGroup="0" eid="2" gridOffX="0" gridOffY="2" id="9762243" layer="0" rot="R90" />
+				<l damageGroup="0" eid="20" gridOffX="0" gridOffY="3" id="9762243" layer="0" rot="R90" />
+				<l damageGroup="0" eid="21" gridOffX="1" gridOffY="3" id="9762243" layer="0" rot="R180" />
+				<l damageGroup="0" eid="21" gridOffX="2" gridOffY="3" id="9762243" layer="0" rot="R180" />
+				<l damageGroup="0" eid="21" gridOffX="3" gridOffY="3" id="9762243" layer="0" rot="R270" />
+				<l damageGroup="0" eid="3" gridOffX="1" gridOffY="1" id="9762792" layer="0" rot="R0" />
+				<l damageGroup="0" eid="4" gridOffX="1" gridOffY="2" id="9762240" layer="0" rot="R0" />
+				<l damageGroup="0" eid="6" gridOffX="2" gridOffY="1" id="9762244" layer="0" rot="R270" />
+				<l damageGroup="0" eid="10" gridOffX="3" gridOffY="2" id="9762243" layer="0" rot="R270" />
+				<l damageGroup="0" eid="13" gridOffX="2" gridOffY="2" id="9762238" layer="0" rot="R270" />
+				<l damageGroup="0" eid="14" gridOffX="3" gridOffY="1" id="9762626" layer="0" rot="R0" />
+				<l damageGroup="0" eid="15" gridOffX="0" gridOffY="0" id="97621081" layer="0" rot="R0" />
+				<l damageGroup="0" eid="16" gridOffX="1" gridOffY="0" id="97621093" layer="0" rot="R0" />
+				<l damageGroup="0" eid="17" gridOffX="2" gridOffY="0" id="97621081" layer="0" rot="R0" />
+				<l damageGroup="0" eid="18" gridOffX="3" gridOffY="0" id="97621093" layer="0" rot="R0" />
+			</linked>	
+			<events />
+			<objectInfo buildInstant="false" debugOnly="false" disableAirlockTest="false" disableBuildTest="false" disableRotation="false" placeInMenu="5" systemPoints="2" viewMode="Normal">
+				<cu>
+					<groups>
+						<l buildTools="60" rep="875">
+						</l>
+					</groups>
+				</cu>
+				<name tid="9762478" />
+				<desc tid="9762479" />
+				<guiIcon aid="build_icon_947" />
+				<subCat id="1510" />
+				<difficultyLevel level="1" skill="Construction" />
+			</objectInfo>
+		</me>
+		
+		<me _name="Industrial Noble Metal Refinery" alternateY="false" costGroup="0" ec="18" mid="97620509" nonSymmetrical="false" offsetRot="R0">
+			<data />
+			<linked>
+				<l damageGroup="0" eid="1" gridOffX="0" gridOffY="1" id="9762243" layer="0" rot="R90" />
+				<l damageGroup="0" eid="2" gridOffX="0" gridOffY="2" id="9762243" layer="0" rot="R90" />
+				<l damageGroup="0" eid="20" gridOffX="0" gridOffY="3" id="9762243" layer="0" rot="R90" />
+				<l damageGroup="0" eid="21" gridOffX="1" gridOffY="3" id="9762243" layer="0" rot="R180" />
+				<l damageGroup="0" eid="21" gridOffX="2" gridOffY="3" id="9762243" layer="0" rot="R180" />
+				<l damageGroup="0" eid="21" gridOffX="3" gridOffY="3" id="9762243" layer="0" rot="R270" />
+				<l damageGroup="0" eid="3" gridOffX="1" gridOffY="1" id="97620506" layer="0" rot="R0" />
+				<l damageGroup="0" eid="4" gridOffX="1" gridOffY="2" id="9762240" layer="0" rot="R0" />
+				<l damageGroup="0" eid="6" gridOffX="2" gridOffY="1" id="9762244" layer="0" rot="R270" />
+				<l damageGroup="0" eid="10" gridOffX="3" gridOffY="2" id="9762243" layer="0" rot="R270" />
+				<l damageGroup="0" eid="13" gridOffX="2" gridOffY="2" id="9762238" layer="0" rot="R270" />
+				<l damageGroup="0" eid="14" gridOffX="3" gridOffY="1" id="9762626" layer="0" rot="R0" />
+				<l damageGroup="0" eid="15" gridOffX="0" gridOffY="0" id="97621081" layer="0" rot="R0" />
+				<l damageGroup="0" eid="16" gridOffX="1" gridOffY="0" id="97621093" layer="0" rot="R0" />
+				<l damageGroup="0" eid="17" gridOffX="2" gridOffY="0" id="97621081" layer="0" rot="R0" />
+				<l damageGroup="0" eid="18" gridOffX="3" gridOffY="0" id="97621093" layer="0" rot="R0" />
+			</linked>	
+			<events />
+			<objectInfo buildInstant="false" debugOnly="false" disableAirlockTest="false" disableBuildTest="false" disableRotation="false" placeInMenu="5" systemPoints="2" viewMode="Normal">
+				<cu>
+					<groups>
+						<l buildTools="60" rep="875">
+						</l>
+					</groups>
+				</cu>
+				<name tid="97620505" />
+				<desc tid="97620505" />
+				<guiIcon aid="build_icon_947" />
+				<subCat id="1510" />
+				<difficultyLevel level="1" skill="Construction" />
+			</objectInfo>
+		</me>		
+
+		<me _name="Industrial Waste Recycler" alternateY="false" costGroup="0" ec="18" mid="97620516" nonSymmetrical="false" offsetRot="R0">
+			<data />
+			<linked>
+				<l damageGroup="0" eid="1" gridOffX="0" gridOffY="1" id="977" layer="0" rot="R90" />
+				<l damageGroup="0" eid="2" gridOffX="0" gridOffY="2" id="977" layer="0" rot="R90" />
+				<l damageGroup="0" eid="20" gridOffX="0" gridOffY="3" id="977" layer="0" rot="R90" />
+				<l damageGroup="0" eid="21" gridOffX="1" gridOffY="3" id="977" layer="0" rot="R180" />
+				<l damageGroup="0" eid="21" gridOffX="2" gridOffY="3" id="977" layer="0" rot="R180" />
+				<l damageGroup="0" eid="21" gridOffX="3" gridOffY="3" id="977" layer="0" rot="R270" />
+				<l damageGroup="0" eid="3" gridOffX="1" gridOffY="1" id="97620510" layer="0" rot="R0" />
+				<l damageGroup="0" eid="4" gridOffX="1" gridOffY="2" id="9762240" layer="0" rot="R0" />
+				<l damageGroup="0" eid="6" gridOffX="2" gridOffY="1" id="9762244" layer="0" rot="R270" />
+				<l damageGroup="0" eid="10" gridOffX="3" gridOffY="2" id="977" layer="0" rot="R270" />
+				<l damageGroup="0" eid="13" gridOffX="2" gridOffY="2" id="9762238" layer="0" rot="R270" />
+				<l damageGroup="0" eid="14" gridOffX="3" gridOffY="1" id="9762626" layer="0" rot="R0" />
+				<l damageGroup="0" eid="15" gridOffX="0" gridOffY="0" id="97621081" layer="0" rot="R0" />
+				<l damageGroup="0" eid="16" gridOffX="1" gridOffY="0" id="97621093" layer="0" rot="R0" />
+				<l damageGroup="0" eid="17" gridOffX="2" gridOffY="0" id="97621081" layer="0" rot="R0" />
+				<l damageGroup="0" eid="18" gridOffX="3" gridOffY="0" id="97621093" layer="0" rot="R0" />
+			</linked>	
+			<events />
+			<objectInfo buildInstant="false" debugOnly="false" disableAirlockTest="false" disableBuildTest="false" disableRotation="false" placeInMenu="5" systemPoints="2" viewMode="Normal">
+				<cu>
+					<groups>
+						<l buildTools="60" rep="875">
+						</l>
+					</groups>
+				</cu>
+				<name tid="97620517" />
+				<desc tid="97620517" />
+				<guiIcon aid="build_icon_947" />
+				<subCat id="1510" />
+				<difficultyLevel level="1" skill="Construction" />
+			</objectInfo>
+		</me>			
+
+
+		<me alternateY="false" costGroup="875" ec="3" mid="9762792" nonSymmetrical="false" offsetRot="R0">
+			<data>
+				<l eid="1" gridOffX="0" gridOffY="0" layer="0" type="Object">
+					<element id="0" lightValue="High" renderOnFloor="false" userTogglable="false" walkGridCost="255">
+						<definedStates>
+							<l playAnimation="false" state="Standby">
+								<r0 aid="scrapper4FH" flx="false" />
+								<r90 aid="null" flx="false" />
+								<r180 aid="scrapper4BH" flx="false" />
+								<r270 aid="null" flx="false" />
+							</l>
+						</definedStates>
+						<features addFacilityIcons="false" inUseState="true" noPressureDmg="false" normalState="true" produceInNormal="true">
+							<produces>
+								<l product="97620503" suction="false" usePowerPerSec="10.0" valuePerSec="10">
+									<logic is="LessThan" resource="9762157" value="100" />
+									<logic is="MaxInv" resource="157" value="10" />								
+									<logic is="MaxInv" resource="9762157" value="10" />	
+									<logic is="MaxInv" resource="97620512" value="10" />										
+									<heat temp="VeryHigh" type="HeatTo" />
+									<gas hazardGasPerSec="100" />
+								</l>
+							</produces>
+							<noiseAndComfort onlyWhenInuse="false" reduceNegative="false">
+								<radiusBeauty radius="12" roomDrop="40" value="-60" />
+							</noiseAndComfort>
+						</features>
+						<boxHatch boxX="20" boxY="-1" flipR90="false" in="true" out="false" x="20" y="-1">
+							<activate activateOffX="0" activateOffY="-1" />
+						</boxHatch>
+						<commonPower />
+					</element>
+				</l>
+			</data>
+			<linked />
+			<events />
+		</me>		
+		
+		<me alternateY="false" costGroup="875" ec="3" mid="97620506" nonSymmetrical="false" offsetRot="R0">
+			<data>
+				<l eid="1" gridOffX="0" gridOffY="0" layer="0" type="Object">
+					<element id="0" lightValue="High" renderOnFloor="false" userTogglable="false" walkGridCost="255">
+						<definedStates>
+							<l playAnimation="false" state="Standby">
+								<r0 aid="scrapper4FH" flx="false" />
+								<r90 aid="null" flx="false" />
+								<r180 aid="scrapper4BH" flx="false" />
+								<r270 aid="null" flx="false" />
+							</l>
+						</definedStates>
+						<features addFacilityIcons="false" inUseState="true" noPressureDmg="false" normalState="true" produceInNormal="true">
+							<produces>
+								<l product="97620504" suction="false" usePowerPerSec="10.0" valuePerSec="10">
+									<logic is="LessThan" resource="9762169" value="100" />
+									<logic is="MaxInv" resource="169" value="10" />								
+									<logic is="MaxInv" resource="9762169" value="10" />	
+									<logic is="MaxInv" resource="97620512" value="10" />										
+									<heat temp="VeryHigh" type="HeatTo" />
+									<gas hazardGasPerSec="100" />
+								</l>
+							</produces>
+							<noiseAndComfort onlyWhenInuse="false" reduceNegative="false">
+								<radiusBeauty radius="12" roomDrop="40" value="-60" />
+							</noiseAndComfort>
+						</features>
+						<boxHatch boxX="20" boxY="-1" flipR90="false" in="true" out="false" x="20" y="-1">
+							<activate activateOffX="0" activateOffY="-1" />
+						</boxHatch>
+						<commonPower />
+					</element>
+				</l>
+			</data>
+			<linked />
+			<events />
+		</me>				
+
+		
+		<me alternateY="false" costGroup="875" ec="3" mid="97620510" nonSymmetrical="false" offsetRot="R0">
+			<data>
+				<l eid="1" gridOffX="0" gridOffY="0" layer="0" type="Object">
+					<element id="0" lightValue="High" renderOnFloor="false" userTogglable="false" walkGridCost="255">
+						<definedStates>
+							<l playAnimation="false" state="Standby">
+								<r0 aid="scrapper4FH" flx="false" />
+								<r90 aid="null" flx="false" />
+								<r180 aid="scrapper4BH" flx="false" />
+								<r270 aid="null" flx="false" />
+								<tasks>
+									<l dir="D7" gridOffX="0" gridOffY="-1" setStateInUse="true" task="StandWork" usage="Both">
+										<activate activateOffX="0" activateOffY="-1" />
+										<r0offset charOffX="0" charOffY="0" />
+										<r180offset charOffX="0" charOffY="0" />
+									</l>
+								</tasks>
+							</l>
+							<l playAnimation="false" state="InUse">
+								<r0 aid="scrapper4FH" flx="false" />
+								<r90 aid="null" flx="false" />
+								<r180 aid="scrapper4BH" flx="false" />
+								<r270 aid="null" flx="false" />
+							</l>
+						</definedStates>
+						<features addFacilityIcons="false" inUseState="true" noPressureDmg="false" normalState="true" produceInNormal="false">
+							<produces>
+								<l product="97620511" suction="false" usePowerPerSec="10.0" valuePerSec="10">
+									<logic is="MaxInv" resource="97620512" value="10" />	
+									<logic is="MaxInv" resource="169" value="10" />		
+									<logic is="MaxInv" resource="157" value="10" />				
+									<heat temp="VeryHigh" type="HeatTo" />
+									<gas hazardGasPerSec="100" />
+								</l>
+							</produces>
+							<noiseAndComfort onlyWhenInuse="false" reduceNegative="false">
+								<radiusBeauty radius="12" roomDrop="40" value="-60" />
+							</noiseAndComfort>
+						</features>
+						<boxHatch boxX="20" boxY="-1" flipR90="false" in="true" out="false" x="20" y="-1">
+							<activate activateOffX="0" activateOffY="-1" />
+						</boxHatch>
+						<commonPower />
+					</element>
+				</l>
+			</data>
+			<linked />
+			<events />
+		</me>				
+				
+		
+		<me alternateY="false" costGroup="875" ec="3" mid="9762792" nonSymmetrical="false" offsetRot="R0">
+			<data>
+				<l eid="1" gridOffX="0" gridOffY="0" layer="0" type="Object">
+					<element id="0" lightValue="High" renderOnFloor="false" userTogglable="false" walkGridCost="255">
+						<definedStates>
+							<l playAnimation="false" state="Standby">
+								<r0 aid="scrapper4FH" flx="false" />
+								<r90 aid="null" flx="false" />
+								<r180 aid="scrapper4BH" flx="false" />
+								<r270 aid="null" flx="false" />
+							</l>
+						</definedStates>
+						<features addFacilityIcons="false" inUseState="true" noPressureDmg="false" normalState="true" produceInNormal="true">
+							<produces>
+								<l product="97620503" suction="false" usePowerPerSec="10.0" valuePerSec="10">
+									<logic is="LessThan" resource="9762157" value="100" />
+									<logic is="MaxInv" resource="157" value="10" />								
+									<logic is="MaxInv" resource="9762157" value="10" />	
+									<heat temp="VeryHigh" type="HeatTo" />
+									<gas hazardGasPerSec="100" />
+								</l>
+							</produces>
+							<noiseAndComfort onlyWhenInuse="false" reduceNegative="false">
+								<radiusBeauty radius="12" roomDrop="40" value="-60" />
+							</noiseAndComfort>
+						</features>
+						<boxHatch boxX="20" boxY="-1" flipR90="false" in="true" out="false" x="20" y="-1">
+							<activate activateOffX="0" activateOffY="-1" />
+						</boxHatch>
+						<commonPower />
+					</element>
+				</l>
+			</data>
+			<linked />
+			<events />
+		</me>		
+		
+		<me alternateY="false" costGroup="875" ec="1" mid="9762238" nonSymmetrical="false" offsetRot="R0">
+			<data>
+				<l eid="1" gridOffX="0" gridOffY="0" layer="0" type="Object">
+					<element id="0" lightValue="High" renderOnFloor="false" userTogglable="false" walkGridCost="255">
+						<definedStates>
+							<l playAnimation="false" state="Standby">
+								<r0 aid="scrapperPart1F" flx="false" />
+								<r90 aid="scrapperPart2F" flx="true" />
+								<r180 aid="scrapperPart2B" flx="false" />
+								<r270 aid="scrapperPart1B" flx="true" />
+							</l>
+						</definedStates>
+					</element>
+				</l>
+			</data>
+			<linked />
+			<events />
+		</me>
+
+		<me alternateY="false" costGroup="875" ec="1" mid="9762240" nonSymmetrical="false" offsetRot="R0">
+			<data>
+				<l eid="1" gridOffX="0" gridOffY="0" layer="0" type="Object">
+					<element id="0" lightValue="High" renderOnFloor="false" userTogglable="false" walkGridCost="255">
+						<definedStates>
+							<l playAnimation="false" state="Standby">
+								<r0 aid="scrapperPart3" flx="false" />
+								<r90 aid="scrapperPart3B" flx="true" />
+								<r180 aid="scrapperPart3B" flx="false" />
+								<r270 aid="scrapperPart3" flx="true" />
+							</l>
+						</definedStates>
+					</element>
+				</l>
+			</data>
+			<linked />
+			<events />
+		</me>				
+		<me alternateY="false" costGroup="875" ec="1" mid="9762243" nonSymmetrical="false" offsetRot="R0">
+			<data>
+				<l eid="1" gridOffX="0" gridOffY="0" layer="0" type="Object">
+					<element id="0" lightValue="High" renderOnFloor="false" userTogglable="false" walkGridCost="255">
+						<definedStates>
+							<l playAnimation="false" state="Standby">
+								<r0 aid="scrapper7F" flx="false" />
+								<r90 aid="null" flx="false" />
+								<r180 aid="scrapper7B" flx="false" />
+								<r270 aid="null" flx="false" />
+							</l>
+						</definedStates>
+					</element>
+				</l>
+			</data>
+			<linked />
+			<events />
+		</me>		
+		<me alternateY="false" costGroup="875" ec="1" mid="9762244" nonSymmetrical="false" offsetRot="R0">
+			<data>
+				<l eid="1" gridOffX="0" gridOffY="0" layer="0" type="Object">
+					<element id="0" lightValue="Medium" renderOnFloor="false" userTogglable="false" walkGridCost="255">
+						<definedStates>
+							<l playAnimation="false" state="Standby">
+								<r0 aid="scrapper8F" flx="false" />
+								<r90 aid="null" flx="false" />
+								<r180 aid="scrapper8B" flx="false" />
+								<r270 aid="null" flx="false" />
+							</l>
+						</definedStates>
+					</element>
+				</l>
+			</data>
+			<linked />
+			<events />
+		</me>		
+		<me alternateY="false" costGroup="875" ec="1" mid="9762626" nonSymmetrical="false" offsetRot="R0">
+			<data>
+				<l eid="1" gridOffX="0" gridOffY="0" layer="0" type="Object">
+					<element id="0" lightValue="High" renderOnFloor="false" userTogglable="false" walkGridCost="255">
+						<definedStates>
+							<l playAnimation="false" state="Standby">
+								<r0 aid="scrapper6FH" flx="false" />
+								<r90 aid="scrapper5FH" flx="true" />
+								<r180 aid="scrapper5BH" flx="false" />
+								<r270 aid="scrapper6BH" flx="true" />
+							</l>
+						</definedStates>
+						<boxHatch boxX="18" boxY="-2" flipR90="true" in="false" out="true" x="18" y="-2">
+							<activate activateOffX="0" activateOffY="-1" />
+							<r90Pos boxX="-15" boxY="-2" x="-15" y="-2" />
+						</boxHatch>
+					</element>
+				</l>
+			</data>
+			<linked />
+			<events />
+		</me>
+		
+		<me alternateY="false" costGroup="0" ec="3" mid="97621081" nonSymmetrical="false" offsetRot="R0">
+			<data>
+				<l eid="2" gridOffX="0" gridOffY="0" layer="0" type="Object">
+					<element id="0" lightValue="None" renderOnFloor="false" userTogglable="false" walkGridCost="0">
+						<definedStates>
+							<l playAnimation="false" state="Standby">
+								<r0 aid="floorDecoRestriction7" flx="false" />
+								<r90 aid="null" flx="false" />
+								<r180 aid="floorDecoRestriction3" flx="false" />
+								<r270 aid="null" flx="false" />
+							</l>
+						</definedStates>
+					</element>
+				</l>
+			</data>
+			<linked />
+			<events />
+		</me>			
+		<me alternateY="false" costGroup="0" ec="1" mid="97621093" nonSymmetrical="false" offsetRot="R0">
+			<data>
+				<l eid="1" gridOffX="0" gridOffY="0" layer="0" type="FloorDeco">
+					<element id="0" lightValue="None" walkGridCost="1">
+						<deco crewReserved="0" info="Nothing">
+							<animation aid="floorDecoOut" />
+						</deco>
+					</element>
+				</l>
+			</data>
+			<linked />
+			<events />
+		</me>				
+
+  </Element>
+</data>

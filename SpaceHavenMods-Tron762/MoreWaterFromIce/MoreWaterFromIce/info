@@ -1,0 +1,8 @@
+<mod>
+  <name>More Water From Ice</name>
+  <description>Increases the amount of water gained from ice (Base game: 5 water from 1 ice. Mod: 30 water from 1 ice</description>
+  <minimumLoaderVersion>0.0.2</minimumLoaderVersion>
+  <gameVersions>
+    <v>0.4.1</v>
+  </gameVersions>
+</mod>
