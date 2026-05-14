@@ -80,7 +80,9 @@ tree.write(xml_buffer, encoding="utf-8", xml_declaration=True)
 xml_content = xml_buffer.getvalue().decode("utf-8").replace(" />", "/>")
 
 if xml_content.startswith("<?xml"):
-    xml_content = xml_content.split("\n", 1)[1] if "\n" in xml_content else ""
+    declaration_end = xml_content.find("?>")
+    if declaration_end != -1:
+        xml_content = xml_content[declaration_end + 2 :]
 xml_content = xml_content.strip()
 
 with open(SAVE_FILE_NAME, "w", encoding="utf-8") as file:
