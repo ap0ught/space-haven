@@ -1,0 +1,15 @@
+<!-- Couchsurfing — LEGACY PLACEHOLDER
+     Original mod: Space Haven alpha community (2019)
+     TODO: Identify the correct furniture/module element IDs in 1.0 data files and
+           replace the stub Operation below with real XPath patch operations.
+-->
+<Patch>
+  <!-- Example stub — update xpath, attribute, and value for 1.0 -->
+  <!--
+  <Operation Class="AttributeSet">
+    <xpath>/data/Element/me[@mid="?"]</xpath>
+    <attribute>comfort</attribute>
+    <value>10</value>
+  </Operation>
+  -->
+</Patch>

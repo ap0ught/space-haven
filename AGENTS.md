@@ -43,6 +43,11 @@ Patches use XPath selectors to target specific game elements and change attribut
 | Pack Wagon | Active | Storage capacities |
 | Less System Points | Active | Configurable `systemPoints` for modules |
 | Zero System Points | **DEPRECATED** | Hard-coded `systemPoints=0`; superseded by **Less System Points** |
+| Legacy Mods/Dream Ship Mod | **LEGACY PLACEHOLDER** | Custom starting ship layout; needs 1.0 port |
+| Legacy Mods/10 Crew Start | **LEGACY PLACEHOLDER** | Start with 10 crew; needs 1.0 port |
+| Legacy Mods/Couchsurfing | **LEGACY PLACEHOLDER** | Extra furniture/comfort items; needs 1.0 port |
+| Legacy Mods/Eff's Larger Fleet | **LEGACY PLACEHOLDER** | Expanded fleet limits; needs 1.0 port |
+| Legacy Mods/More Hyperdrive | **LEGACY PLACEHOLDER** | Additional hyperdrive options; needs 1.0 port |
 
 ## Common Tasks
 
